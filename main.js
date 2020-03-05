@@ -20,3 +20,25 @@ const lis = document.querySelectorAll('li')
 for (const li of lis){
     li.addEventListener('click',opacityLine)
 }
+
+const beGone = (event) => {
+    event.target.style.width = '0'
+}
+
+const smaller = document.querySelectorAll('#row')
+for (const row of smaller) {
+    row.addEventListener('click', beGone)
+}
+
+
+
+/*const arr = [lineThrough,opacityLine,beGone];
+
+const button = document.querySelector('#destroy-all')
+const destroy = (event) => {
+for(const destruction of arr ){
+.addEventListener.('click',destruction)
+}  
+}
+button.addEventListener('click', destroy)*/
+
