@@ -25,20 +25,30 @@ const beGone = (event) => {
     event.target.style.width = '0'
 }
 
-const smaller = document.querySelectorAll('#row')
+const smaller = document.querySelectorAll('img')
 for (const row of smaller) {
     row.addEventListener('click', beGone)
 }
 
 
 
-/*const arr = [lineThrough,opacityLine,beGone];
+
 
 const button = document.querySelector('#destroy-all')
-const destroy = (event) => {
-for(const destruction of arr ){
-.addEventListener.('click',destruction)
-}  
+const destroy = () => {
+for (const ol of ols){
+        ol.style.textDecoration = 'line-through'
+}for (const li of lis){
+    li.style.textDecoration = 'line-through'
+    li.style.opacity = '0'
+
+}for (const row of smaller) {
+    row.style.width = '0'
 }
-button.addEventListener('click', destroy)*/
+}
+console.log(row)
+button.addEventListener('click', destroy)
+
+
+
 
